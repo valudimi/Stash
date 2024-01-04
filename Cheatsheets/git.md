@@ -115,6 +115,7 @@ You should only commit source code files or files that cannot be compiled/linked
 - Clear all tracked file changes and revert to the initial state of `HEAD` (doesn't affect non-tracked files): `git reset --hard`
 
 # Resources
+- [Commits are snapshots, not diffs](https://github.blog/2020-12-17-commits-are-snapshots-not-diffs/)
 - [gitready](https://gitready.com/)
 - [git immersion](https://gitimmersion.com/)
 - [tpope's post on commit messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
