@@ -3,34 +3,34 @@
 git clone <project>
 git init
 git remote add origin <project>
-git status                                              # Provides info about the current branch, staging area etc.
-git log <--oneline>                                     # CLI view of commit history
-git diff <id1> <id2>                                    # argc: 0 (versus HEAD), 1 (id vs HEAD) or 2 (id vs id) arguments
-git diff --cached                                       # diff between HEAD and data in staging area
+git status                                         # Provides info about the current branch, staging area etc.
+git log <--oneline>                                # CLI view of commit history
+git diff <id1> <id2>                               # argc: 0 (versus HEAD), 1 (id vs HEAD) or 2 (id vs id)
+git diff --cached                                  # diff between HEAD and data in staging area
 git add <-i> <path>
 
 git reset <path>
-git commit <-s -a -m "MESSAGE">                         # Always sign your commits
+git commit <-s -a -m "MESSAGE">                    # Always sign your commits
 git commit --amend <--author "<name> <email>">
 
-git branch <branch>                                     # Create a new branch
-git branch -d <branch>                                  # Delete a branch
+git branch <branch>                                # Create a new branch
+git branch -d <branch>                             # Delete a branch
 git push -u origin <branch>
-git pull origin <branch>                                # Update branch with changes from cloud
+git pull origin <branch>                           # Update branch with changes from cloud
 
-git checkout -b <branch>                                # Switch to specified branch with local changes
-git checkout -b origin/<branch>                         # Switch to specified branch with changes from cloud
+git checkout -b <branch>                           # Switch to specified branch with local changes
+git checkout -b origin/<branch>                    # Switch to specified branch with changes from cloud
 
-git merge <branch>                                      # Attempt to bring changes from the specified branch to the current one
-git rebase <branch>                                     # Move all commits in chronological order from current branch to specified
-git rebase <destination_branch> <source_branch>         # Move all commits in chronological order from the source branch to the destination one
-git rebase -i <id>                                      # Used to modify a specific (not latest) local (not pushed to remote) commit; usually replace pick with edit
+git merge <branch>                                 # Bring changes from specified to current branch
+git rebase <branch>                                # Move all commits in chronological order (current to specified)
+git rebase <destination_branch> <source_branch>    # As above, but source to destination
+git rebase -i <id>                                 # Used to modify a specific commit
 
-git stash                                               # Save current changes and return the project to the last commit's state; very useful if you need to rebase or pull, but you want to keep 'dirty data'
-git stash pop                                           # Apply stash changes again and delete them from temporary storage
+git stash                                          # Save current changes and return the project to last commit's state
+git stash pop                                      # Apply stash changes again and delete them from temporary storage
 
-git cherry-pick <commit_hash>                           # Take all changes from a specific commit (specified by hash) and apply them to the current branch
-git rebase -i Head~<N>                                  # Squash the last N commits into a single one, in the interactive editor replace 'pick' with 'squash' outside of the first line
+git cherry-pick <commit_hash>                      # Take all changes from specific commit and apply to current branch
+git rebase -i Head~<N>                             # Squash last N commits into a single one, replace 'pick' with 'squash' except first line
 ```
 
 
