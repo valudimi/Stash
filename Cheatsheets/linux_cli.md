@@ -1,6 +1,5 @@
 ### Zellij binds
 - `Ctrl+P; Z` - switch to compact layout
-- ` `
 
 ### Command chaining
 ```
@@ -165,6 +164,38 @@ passwd
 sudo passwd <user>
 ```
 
+### Processes
+Process states:
+- Running
+- Stopped (`ctrl+z`)
+- Sleeping (process is waiting on a resource)
+- Zombie (process not properly cleaned up when it died)
+- Terminated
+
+```
+ps <aux or -ef>
+pstree
+top
+htop
+jobs
+ctrl+z -> bg/fg <job number>
+pkill
+kill
+killall
+```
+
+### Scheduling
+```
+less /etc/crontab        # Scheduled at the system level, intended only for maintenance of entire system
+ls /etc/cron.daily       # System-wide cronjobs
+
+crontab -e               # Configure new crontab, goes into the user's home folder, under cron subdir
+crontab -r               # Delete crontab jobs
+
+/etc/init.d              # Scripts that run at system startup; you can add your own
+/etc/rc5.d               # Symlinks to scripts in /etc/init.d, naming is significant, look it up
+```
+
 ### Text management
 ```
 sed 's/Suite/Ste/' text.txt     # Replaces Suite with Ste, once per line
@@ -269,8 +300,10 @@ touch
 ### Networking commands
 ```
 ping <-c>
-ifconfig
 ip
+iwconfig
+ifconfig
+arp                        # Address resolution protocol
 route
 nslookup
 dig
@@ -305,6 +338,10 @@ user@hostname:[homedir][luser, not root; # denotes root, $ denotes luser]
 fc-list          # List fonts
 fc-match         # Search for font
 ```
+- Linux, Windows and MacOS all use different terminations in text files (check with `file`):
+    - CRLF = Windows/DOS
+    - CR = MacOS
+- Use `dos2unix` and `unix2dos` to convert
 
 ### Exit codes
 ```
@@ -317,6 +354,7 @@ echo $?    # check exit status
 ```
 
 ### Resources
+- [Crontab Guru](https://crontab.guru/)
+- [Linux filesystem hierarchy standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
 - [TCM Academy Linux 101](https://academy.tcm-sec.com/courses/1552914)
 - [Operating Systems Usage](https://ocw.cs.pub.ro/courses/uso/) (in Romanian)
-- [Linux filesystem hierarchy standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)

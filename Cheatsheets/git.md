@@ -116,6 +116,8 @@ You should only commit source code files or files that cannot be compiled/linked
 
 # Resources
 - [Commits are snapshots, not diffs](https://github.blog/2020-12-17-commits-are-snapshots-not-diffs/)
+- [Atlassian Git cheat sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+- [Pushing ammended commits to remote git repository](https://stackoverflow.com/questions/253055/how-do-i-push-amended-commit-to-the-remote-git-repository)
 - [gitready](https://gitready.com/)
 - [git immersion](https://gitimmersion.com/)
 - [tpope's post on commit messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
