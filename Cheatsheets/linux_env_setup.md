@@ -62,6 +62,8 @@ Then go to Settings -> Keyboard -> Shortcuts -> Custom Shortcuts and set Ctrl+Sh
 Zellij:
 ```
 cargo install --locked zellij
+mkdir ~/.config/zellij
+zellij setup --dump-config > ~/.config/zellij/config.kdl
 ```
 
 Use the provided dotfiles directly in your home directory.
@@ -72,3 +74,8 @@ GEF:
 bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 ```
 
+RustScan:
+```
+sudo apt install nmap
+cargo install rustscan
+```
