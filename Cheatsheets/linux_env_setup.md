@@ -50,12 +50,25 @@ rustup override set stable
 rustup update stable
 ```
 
-Alacritty - first clone the repo and cd into it:
+Alacritty:
 ```
 rustup override set stable
 rustup update stable
 apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-cargo build --release
-
+cargo install alacritty
 ```
-TODO: Rustup, Zellij, Alacritty
+Then go to Settings -> Keyboard -> Shortcuts -> Custom Shortcuts and set Ctrl+Shift+A to `alacritty`
+
+Zellij:
+```
+cargo install --locked zellij
+```
+
+Use the provided dotfiles directly in your home directory.
+
+# Other tools
+GEF:
+```
+bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+```
+
