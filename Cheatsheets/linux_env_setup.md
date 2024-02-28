@@ -3,14 +3,14 @@ Written for Ubuntu.
 # Initial config
 Make sure you're using Xorg (compatibility with streaming/recording software and drag-drop functionality for browsers)
 ```
-sudo sed -i '/WaylandEnable=false/s/^# //g' /etc/gdm3/custom.conf
+sudo sed -i '/WaylandEnable=false/s/^#//g' /etc/gdm3/custom.conf
 sudo systemctl restart gdm3
 echo "$XDG_SESSION_TYPE"
 ```
 
 To switch back to Wayland, run:
 ```
-sudo sed -i '/WaylandEnable=false/s/^/# /g' /etc/gdm3/custom.conf
+sudo sed -i '/WaylandEnable=false/s/^/#/g' /etc/gdm3/custom.conf
 sudo systemctl restart gdm3
 echo "$XDG_SESSION_TYPE"
 ```
@@ -54,7 +54,7 @@ Alacritty:
 ```
 rustup override set stable
 rustup update stable
-apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 cargo install alacritty
 ```
 Then go to Settings -> Keyboard -> Shortcuts -> Custom Shortcuts and set Ctrl+Shift+A to `alacritty`
