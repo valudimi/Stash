@@ -1,0 +1,10 @@
+[window]
+decorations = "None"
+startup_mode = "Fullscreen"
+
+[font]
+size = 13.5
+
+[colors]
+[colors.primary]
+background = "#10051a"
