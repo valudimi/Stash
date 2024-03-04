@@ -19,6 +19,15 @@ Install Gnome Tweaks, then use the Tweaks app:
 ```
 sudo apt install gnome-tweaks
 ```
+
+Install Gnome Extensions:
+```
+sudo apt install gnome-shell-extensions
+```
+
+To install Gnome extensions, either use the browser plugin (doesn't work with snap installations) or install manually. [Info here.](https://itsfoss.com/gnome-shell-extensions/)
+
+
 # Terminal
 Install zsh:
 ```
