@@ -25,8 +25,7 @@ Install Gnome Extensions:
 sudo apt install gnome-shell-extensions
 ```
 
-To install Gnome extensions, either use the browser plugin (doesn't work with snap installations) or install manually. [Info here.](https://itsfoss.com/gnome-shell-extensions/)
-
+To install Gnome extensions, either use the browser plugin (doesn't work with snap installations) or install manually. [Info here.](https://itsfoss.com/gnome-shell-extensions/). Must-have extensions: gnome-shell-extension-caffeine (Caffeine version from the Ubuntu software store causes shell crashes), gnome-shell-system-monitor-applet is cool too.
 
 # Terminal
 Install zsh:
