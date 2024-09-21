@@ -79,12 +79,26 @@ To change existing commits, you have a few different options, but keep in mind t
 git commit --amend <--author "<name> <email>">
 ```
 
+Commonly, especially with UPB repositories, you may have to use the following:
+```
+git commit --amend --no-edit
+git push -f origin
+```
+
 To modify a specific commit:
 ```
 git rebase -i <id>
 git add <...>
 git commit --amend
 git rebase --continue
+```
+
+### Update your local copy without losing modifications
+Do the following:
+```
+git stash
+git pull origin master
+git stash pop
 ```
 
 ### Ignoring
