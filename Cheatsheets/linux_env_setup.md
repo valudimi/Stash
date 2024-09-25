@@ -65,6 +65,11 @@ rustup update stable
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 cargo install alacritty
 ```
+You may need to also copy the `alacritty` binary to your `bin`:
+```
+cp .cargo/bin/alacritty /usr/local/bin/
+```
+
 Then go to Settings -> Keyboard -> Shortcuts -> Custom Shortcuts and set Ctrl+Shift+A to `alacritty`
 
 Zellij:
