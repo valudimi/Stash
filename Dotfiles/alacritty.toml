@@ -1,0 +1,72 @@
+[keyboard]
+bindings = [
+  { key = "Home",     chars = "\u001BOH",     mode = "AppCursor"},
+  { key = "Home",     chars = "\u001B[H",     mode = "~AppCursor"},
+  { key = "End",      chars = "\u001BOF",     mode = "AppCursor"},
+  { key = "End",      chars = "\u001B[F",     mode = "~AppCursor"},
+  { key = "Right",    mods = "Control",       chars = "\u001BF" },
+  { key = "Left",     mods = "Control",       chars = "\u001BB" },
+  { key = "Right",    mods = "Alt",           chars = "\u001BF" },
+  { key = "Left",     mods = "Alt",           chars = "\u001BB" },
+  { key = "D",        mods = "Alt",           chars = "\u001BD" },
+  { key = "PageUp",   mods = "Shift",         action = "ScrollPageUp",      mode = "~Alt" },
+  { key = "PageDown", mods = "Shift",         action = "ScrollPageDown",    mode = "~Alt" },
+  { key = "Up",       mods = "Shift",         action = "ScrollLineUp",      mode = "~Alt" },
+  { key = "Down",     mods = "Shift",         action = "ScrollLineDown",    mode = "~Alt" },
+  { key = "Home",     mods = "Shift",         action = "ScrollToTop",       mode = "~Alt" },
+  { key = "End",      mods = "Shift",         action = "ScrollToBottom",    mode = "~Alt" },
+]
+
+[cursor.style]
+shape                 = "Beam"
+blinking              = "Always"
+
+[cursor.vi_mode_style]
+shape                 = "Block"
+blinking              = "Off"
+
+[cursor]
+blink_interval        = 500
+blink_timeout         = 0
+#unfocused_hollow      = true
+thickness             = 0.20
+
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+
+[window.dimensions]
+columns = 70
+lines = 24
+
+[font]
+size = 20
+
+# I'm currently running this: https://github.com/alacritty/alacritty-theme/blob/master/themes/ayu_mirage.toml
+# but I like this one too: https://github.com/alacritty/alacritty-theme/blob/master/themes/autumn.toml
+[colors.primary]
+background = "#1f2430"
+foreground = "#cbccc6"
+bright_foreground = "#f28779"
+
+[colors.normal]
+black = "#212733"
+red = "#f08778"
+green = "#53bf97"
+yellow = "#fdcc60"
+blue = "#60b8d6"
+magenta = "#ec7171"
+cyan = "#98e6ca"
+white = "#fafafa"
+
+[colors.bright]
+black = "#686868"
+red = "#f58c7d"
+green = "#58c49c"
+yellow = "#ffd165"
+blue = "#65bddb"
+magenta = "#f17676"
+cyan = "#9debcf"
+white = "#ffffff"
