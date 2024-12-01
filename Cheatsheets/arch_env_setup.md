@@ -12,6 +12,17 @@ Install needed packages:
 pacman -S multilib sysfsutils pipewire pipewire-docs firefox python-pip python-flask python-requests python-pwntools
 ```
 
+## Gnome setup
+
+Disable hot corner and enable over-amplification:
+
+``` bash
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
+```
+
+In Gnome Extensions, enable Apps Menu, Places Status Indicator, Status Icons, and System Monitor.
+
 ## Bluetooth setup
 
 Install required packages:
