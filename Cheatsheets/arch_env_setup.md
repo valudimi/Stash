@@ -9,7 +9,7 @@ gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
 Install needed packages:
 
 ``` bash
-pacman -S sysfsutils
+pacman -S multilib sysfsutils pipewire pipewire-docs firefox python-pip python-flask python-requests python-pwntools
 ```
 
 ## Bluetooth setup
