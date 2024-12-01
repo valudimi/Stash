@@ -35,3 +35,7 @@ systemctl start bluetooth.service
 ```
 
 Restart and enjoy.
+
+## Font
+
+Install MonoLisa Regular, following [this](https://medium.com/@salswa/install-monolisa-font-in-vscode-and-github-codespaces-d5b81ed7f047) link as a guide.
