@@ -9,7 +9,7 @@ gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
 Install needed packages:
 
 ``` bash
-pacman -S multilib sysfsutils pipewire pipewire-docs firefox python-pip python-flask python-requests python-pwntools
+pacman -S multilib sysfsutils pipewire pipewire-docs net-tools zip firefox python-pip python-flask python-requests python-pwntools python-cryptography python-pycryptodome
 ```
 
 ## Gnome setup
@@ -22,6 +22,14 @@ gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
 ```
 
 In Gnome Extensions, enable Apps Menu, Places Status Indicator, Status Icons, and System Monitor.
+
+Install Caffeine:
+
+``` bash
+yay -S gnome-shell-extension-caffeine
+```
+
+Restart computer and then enjoy.
 
 ## Bluetooth setup
 
